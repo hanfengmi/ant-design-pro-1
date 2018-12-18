@@ -20,6 +20,18 @@ export default [
       // dashboard
       { path: '/', redirect: '/dashboard/analysis' },
       {
+        path: '/work',
+        name: 'work',
+        icon: 'table',
+        routes: [
+          {
+            path: '/work/list',
+            name: 'list',
+            component: './Work/Test',
+          },
+        ],
+      },
+      {
         path: '/dashboard',
         name: 'dashboard',
         icon: 'dashboard',
