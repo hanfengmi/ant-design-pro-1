@@ -32,7 +32,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:hanfengmi/ant-design-pro-1.git',
       path : '/var/www/html/webFront',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env prod'
+      'post-deploy' : 'npm install && npm run build'
     },
     dev : {
       user : 'root',
