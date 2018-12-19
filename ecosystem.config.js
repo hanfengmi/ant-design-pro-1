@@ -7,21 +7,18 @@ module.exports = {
 
     // First application
     {
-      name      : 'API',
-      script    : 'app.js',
+      name      : 'front',
+      script    : 'dist/index.html',
       env: {
         COMMON_VARIABLE: 'true'
       },
-      env_production : {
-        NODE_ENV: 'production'
-      }
+      env_prod: {
+        NODE_ENV: 'prod'
+      },
+      env_dev: {
+          NODE_ENV: 'dev'
+      },
     },
-
-    // Second application
-    {
-      name      : 'WEB',
-      script    : 'web.js'
-    }
   ],
 
   /**
@@ -30,20 +27,20 @@ module.exports = {
    */
   deploy : {
     production : {
-      user : 'node',
-      host : '212.83.163.1',
+      user : 'root',
+      host : '47.98.195.42',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      repo : 'git@github.com:hanfengmi/ant-design-pro-1.git',
+      path : '/var/www/html/webFront',
+      'post-deploy' : 'npm install && npm run build && pm2 reload ecosystem.config.js --env prod'
     },
     dev : {
-      user : 'node',
-      host : '212.83.163.1',
+      user : 'root',
+      host : '47.98.195.42',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/development',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
+      repo : 'git@github.com:hanfengmi/ant-design-pro-1.git',
+      path : '/var/www/html/webFront',
+      'post-deploy' : 'npm install && npm run build && pm2 reload ecosystem.config.js --env dev',
       env  : {
         NODE_ENV: 'dev'
       }
