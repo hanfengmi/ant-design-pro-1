@@ -26,7 +26,7 @@ module.exports = {
    * http://pm2.keymetrics.io/docs/usage/deployment/
    */
   deploy : {
-    production : {
+    prod : {
       user : 'root',
       host : '47.98.195.42',
       ref  : 'origin/master',
