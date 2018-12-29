@@ -1,5 +1,8 @@
 export default {
   'menu.home': '首页',
+  'menu.work': '工作',
+  'menu.work.list': '吃屁去吧',
+  'menu.life': '生活',
   'menu.dashboard': 'Dashboard',
   'menu.dashboard.analysis': '分析页',
   'menu.dashboard.monitor': '监控页',
