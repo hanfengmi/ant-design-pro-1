@@ -8,7 +8,7 @@ const role = ['管理员', '普通用户'];
   test,
   loading: loading.effects['test/test'],
 }))
-class Test extends Component {
+class List extends Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch({
@@ -59,4 +59,4 @@ class Test extends Component {
   }
 }
 
-export default Test;
+export default List;

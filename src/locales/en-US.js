@@ -12,9 +12,8 @@ import pwa from './en-US/pwa';
 
 export default {
   'navBar.lang': 'Languages',
-  'layout.user.link.help': 'Help',
-  'layout.user.link.privacy': 'Privacy',
-  'layout.user.link.terms': 'Terms',
+  'layout.user.link.github': 'github',
+  'layout.user.link.segmentfault': 'segmentfault',
   'app.home.introduce': 'introduce',
   'app.forms.basic.title': 'Basic form',
   'app.forms.basic.description':

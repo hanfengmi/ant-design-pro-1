@@ -52,6 +52,30 @@ export default {
     phone: '0752-268888888',
   },
   // GET POST 可省略
+  'GET /api/test': {
+    errCode:0,
+    result:{
+      users:[
+        {
+          address: [],
+          blog: [],
+          blogs: [],
+          createdAt: "2019-01-03T09:42:06.414Z",
+          email: "838570561@qq.com",
+          gender: "male",
+          name: "kezhao Han",
+          password: "123123",
+          phone: "15717671152",
+          picture: "",
+          role: 0,
+          signature: "",
+          updatedAt: "2019-01-03T09:42:06.414Z",
+          _id: "5b4d99e25d6f012ecc0c1812",
+        }
+      ]
+    }
+  },
+  // GET POST 可省略
   'GET /api/users': [
     {
       key: '1',

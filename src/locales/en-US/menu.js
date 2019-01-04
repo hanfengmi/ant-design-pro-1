@@ -1,5 +1,9 @@
 export default {
   'menu.home': 'Home',
+  'menu.users': 'Users',
+  'menu.users.usersList': 'User List',
+  'menu.work': 'Work',
+  'menu.work.list': 'Work List',
   'menu.dashboard': 'Dashboard',
   'menu.dashboard.analysis': 'Analysis',
   'menu.dashboard.monitor': 'Monitor',

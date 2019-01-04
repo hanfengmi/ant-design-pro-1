@@ -5,48 +5,34 @@ import { Icon } from 'antd';
 import GlobalFooter from '@/components/GlobalFooter';
 import SelectLang from '@/components/SelectLang';
 import styles from './UserLayout.less';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 
 const links = [
   {
-    key: 'help',
-    title: formatMessage({ id: 'layout.user.link.help' }),
-    href: '',
+    key: 'github',
+    title: formatMessage({ id: 'layout.user.link.github' }),
+    href: 'https://github.com/hanfengmi',
+    blankTarget:true,
   },
   {
-    key: 'privacy',
-    title: formatMessage({ id: 'layout.user.link.privacy' }),
-    href: '',
-  },
-  {
-    key: 'terms',
-    title: formatMessage({ id: 'layout.user.link.terms' }),
-    href: '',
+    key: 'segmentfault',
+    title: formatMessage({ id: 'layout.user.link.segmentfault' }),
+    href: 'https://segmentfault.com/u/duolaweimeng',
+    blankTarget:true,
   },
 ];
 
 const copyright = (
   <Fragment>
-    Copyright <Icon type="copyright" /> 2018 蚂蚁金服体验技术部出品
+    Copyright <Icon type="copyright" /> 2019 Mr.Han
   </Fragment>
 );
 
 class UserLayout extends React.PureComponent {
-  // @TODO title
-  // getPageTitle() {
-  //   const { routerData, location } = this.props;
-  //   const { pathname } = location;
-  //   let title = 'Ant Design Pro';
-  //   if (routerData[pathname] && routerData[pathname].name) {
-  //     title = `${routerData[pathname].name} - Ant Design Pro`;
-  //   }
-  //   return title;
-  // }
 
   render() {
     const { children } = this.props;
     return (
-      // @TODO <DocumentTitle title={this.getPageTitle()}>
       <div className={styles.container}>
         <div className={styles.lang}>
           <SelectLang />
@@ -56,10 +42,10 @@ class UserLayout extends React.PureComponent {
             <div className={styles.header}>
               <Link to="/">
                 <img alt="logo" className={styles.logo} src={logo} />
-                <span className={styles.title}>Ant Design</span>
+                <span className={styles.title}>H 的后台</span>
               </Link>
             </div>
-            <div className={styles.desc}>Ant Design 是西湖区最具影响力的 Web 设计规范</div>
+            <div className={styles.desc}>扶我起来，我还要学</div>
           </div>
           {children}
         </div>

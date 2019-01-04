@@ -12,9 +12,8 @@ import pwa from './zh-CN/pwa';
 
 export default {
   'navBar.lang': '语言',
-  'layout.user.link.help': '帮助',
-  'layout.user.link.privacy': '隐私',
-  'layout.user.link.terms': '条款',
+  'layout.user.link.github': 'github',
+  'layout.user.link.segmentfault': '思否',
   'app.home.introduce': '介绍',
   'app.forms.basic.title': '基础表单',
   'app.forms.basic.description':

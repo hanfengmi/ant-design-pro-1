@@ -1,3 +1,7 @@
+/**
+ * Login外层组件
+ * 控制tab
+ * */ 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Tabs } from 'antd';
@@ -122,6 +126,8 @@ class Login extends Component {
     );
   }
 }
+
+// 下面tm的是啥意思  ????????????????????
 
 Login.Tab = LoginTab;
 Login.Submit = LoginSubmit;
